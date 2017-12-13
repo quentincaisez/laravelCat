@@ -28,7 +28,7 @@ class CatController extends Controller
     $cat->colors()->detach();
     $cat->delete();
     return redirect('/');//redirection
-    dd($id);
+
   }
   public function updateOne(Request $request, $id)
   {
@@ -48,15 +48,17 @@ class CatController extends Controller
   }
   public function updateOneAction(Request $request)
   {
-      $cat = Cat::find($request->id);
-      $cat->name = $request->name;
-      $cat->size = $request->size;
-      $cat->weight = $request->weight;
-      $cat->age = $request->age;
-      $cat->gender_id = $request->gender;
-      $cat->save();
-      $cat->colors()->detach();
-      $cat->colors()->attach($request->color);
+
+       $cat = Cat::find($request->id);
+
+       $cat->name = $request->name;
+       $cat->size = $request->size;
+       $cat->weight = $request->weight;
+       $cat->age = $request->age;
+       $cat->gender_id = $request->gender;
+       $cat->save();
+       $cat->colors()->detach();
+       $cat->colors()->attach($request->color);
       return redirect('/');
   }
 }

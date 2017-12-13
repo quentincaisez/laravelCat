@@ -1,0 +1,74 @@
+body{
+  background-color: black;
+  color : silver;
+  font-family: cursive; pacifico;
+  r
+}
+li {
+  list-style: none;
+  padding: 0 25px;
+  font-size: 15px;
+}
+a {
+  color : silver;
+  text-decoration: underline;
+}
+a:hover{
+  color:gold;
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+  font-size: 55px;
+}
+
+.flexcenter {
+  display: flex;
+  justify-content: flex-end;
+}
+.flexwrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.flexcenterform{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+input{
+  padding: 10px 0;
+  width: 200px;
+  background-color: grey;
+  border: solid 1px grey ;
+  text-align: center;
+  border-radius: 2px;
+}
+input[type="number"],input[type="text"]{
+  color : gold;
+  letter-spacing: 5px;
+
+}
+table{
+
+  width: 70%;
+  margin: 75px  auto;
+}
+tr{
+  border-bottom: solid 2px silver;
+}
+td , th {
+  padding: 15px 0;
+}
+button{
+    color : gold;
+    background-color: black;
+    border : solid 2px black;
+}
+button:hover{
+    color : black;
+    background-color: gold;
+    border : solid 2px gold;
+    transition: linear 1s;
+    border-radius: 15px 0px ;
+}
